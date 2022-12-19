@@ -364,7 +364,7 @@ Friends</h2></td></tr>
 <p>Add parameter to a Acknowledge group function message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
     <tr><td class="paramname">ParameterPairIndex</td><td>Index of the parameter pair </td></tr>
     <tr><td class="paramname">ErrorCode</td><td>Error code to be added to the message </td></tr>
   </table>
@@ -412,7 +412,7 @@ Friends</h2></td></tr>
 <p>Change the PGN error code for a group function message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
     <tr><td class="paramname">PGNErrorCode</td><td>PGN error code, see <a class="el" href="_n2k_group_function_8h.html#a581366a28f5e6d0f779da0f33191629e">tN2kGroupFunctionPGNErrorCode</a> </td></tr>
   </table>
   </dd>
@@ -459,7 +459,7 @@ Friends</h2></td></tr>
 <p>Change the Transmission or Priority error code code for a group function message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
     <tr><td class="paramname">TransmissionOrPriorityErrorCode</td><td>Transmission or Priority error code, see <a class="el" href="_n2k_group_function_8h.html#aba86dcb75a6f93dded55b6817627e94f">tN2kGroupFunctionTransmissionOrPriorityErrorCode</a> </td></tr>
   </table>
   </dd>
@@ -497,7 +497,7 @@ Friends</h2></td></tr>
 <p >This is a static function for PGN 126208 handling. The function extracts the PGN (as 3 bytes) from the given N2K message.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
   </table>
   </dd>
 </dl>
@@ -646,7 +646,7 @@ N2kgfTPec_TransmitIntervalOrPriorityNotSupported -&gt; all other intervals </dd>
 <p>Handle for a Group Function. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
     <tr><td class="paramname">GroupFunctionCode</td><td>Code for Group Function, see <a class="el" href="_n2k_group_function_8h.html#ac314d0f10e98b40e38c24030ab7f29bc">tN2kGroupFunctionCode</a> </td></tr>
     <tr><td class="paramname">PGNForGroupFunction</td><td>PGN for the Group function </td></tr>
     <tr><td class="paramname">iDev</td><td>Index off the device in <a class="el" href="classt_n_m_e_a2000.html#af9b9fee600114b00f96e1f93cb337085">tNMEA2000::Devices</a></td></tr>
@@ -718,7 +718,7 @@ false -&gt; if (PGN!=PGNForGroupFunction &amp;&amp; PGN!=0) </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>As default, this simply returns true meaning that received acknowledge has been handled. So you need to override this, if your device will send one of those commands.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
     <tr><td class="paramname">PGNErrorCode</td><td>PGN Error Code, see <a class="el" href="_n2k_group_function_8h.html#a581366a28f5e6d0f779da0f33191629e">tN2kGroupFunctionPGNErrorCode</a> </td></tr>
     <tr><td class="paramname">TransmissionOrPriorityErrorCode</td><td>see <a class="el" href="_n2k_group_function_8h.html#aba86dcb75a6f93dded55b6817627e94f">tN2kGroupFunctionTransmissionOrPriorityErrorCode</a> </td></tr>
     <tr><td class="paramname">NumberOfParameterPairs</td><td>Number of parameter pairs contained inside the group function message </td></tr>
@@ -782,7 +782,7 @@ false -&gt; if (PGN!=PGNForGroupFunction &amp;&amp; PGN!=0) </dd></dl>
 <p >Default response is "not supported".</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
     <tr><td class="paramname">PrioritySetting</td><td>Priority Setting </td></tr>
     <tr><td class="paramname">NumberOfParameterPairs</td><td>Number of parameter pairs contained inside the group function message </td></tr>
     <tr><td class="paramname">iDev</td><td>Index off the device in <a class="el" href="classt_n_m_e_a2000.html#af9b9fee600114b00f96e1f93cb337085">tNMEA2000::Devices</a></td></tr>
@@ -864,7 +864,7 @@ false -&gt; if (PGN!=PGNForGroupFunction &amp;&amp; PGN!=0) </dd></dl>
 <p>Handle the response to Group Function "Read Fields". </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
     <tr><td class="paramname">ManufacturerCode</td><td>Manufacturer Code, This will be set to 0xffff for non-propprietary PNGs </td></tr>
     <tr><td class="paramname">IndustryGroup</td><td>Industry Group Code, This will be set to 0xff for non-propprietary PNGs </td></tr>
     <tr><td class="paramname">UniqueID</td><td>Unique ID for the device </td></tr>
@@ -918,7 +918,7 @@ false -&gt; if (PGN!=PGNForGroupFunction &amp;&amp; PGN!=0) </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Under construction! No real code inside, always returns true!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
     <tr><td class="paramname">iDev</td><td>Index off the device in <a class="el" href="classt_n_m_e_a2000.html#af9b9fee600114b00f96e1f93cb337085">tNMEA2000::Devices</a></td></tr>
   </table>
   </dd>
@@ -985,7 +985,7 @@ false -&gt; if (PGN!=PGNForGroupFunction &amp;&amp; PGN!=0) </dd></dl>
 <p >Default response is "not supported". Certified devices must respond to requests!</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
     <tr><td class="paramname">TransmissionInterval</td><td>Transmission interval [ms] </td></tr>
     <tr><td class="paramname">TransmissionIntervalOffset</td><td>Offset to the transmission interval [10ms] </td></tr>
     <tr><td class="paramname">NumberOfParameterPairs</td><td>Number of parameter pairs contained inside the group function message </td></tr>
@@ -1068,7 +1068,7 @@ false -&gt; if (PGN!=PGNForGroupFunction &amp;&amp; PGN!=0) </dd></dl>
 <p>Handle the response to Group Function "Write Fields". </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
     <tr><td class="paramname">ManufacturerCode</td><td>Manufacturer Code, This will be set to 0xffff for non-propprietary PNGs </td></tr>
     <tr><td class="paramname">IndustryGroup</td><td>Industry Group Code, This will be set to 0xff for non-propprietary PNGs </td></tr>
     <tr><td class="paramname">UniqueID</td><td>Unique ID for the device </td></tr>
@@ -1122,7 +1122,7 @@ false -&gt; if (PGN!=PGNForGroupFunction &amp;&amp; PGN!=0) </dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>Under construction! No real code inside, always returns true!</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
     <tr><td class="paramname">iDev</td><td>Index off the device in <a class="el" href="classt_n_m_e_a2000.html#af9b9fee600114b00f96e1f93cb337085">tNMEA2000::Devices</a></td></tr>
   </table>
   </dd>
@@ -1313,7 +1313,7 @@ template&lt;typename T &gt; </div>
 <p >This is a static function for PGN 126208 handling.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
     <tr><td class="paramname">GroupFunctionCode</td><td>Group Function Code, see <a class="el" href="_n2k_group_function_8h.html#ac314d0f10e98b40e38c24030ab7f29bc">tN2kGroupFunctionCode</a> </td></tr>
     <tr><td class="paramname">PGNForGroupFunction</td><td>PGN for the Group function</td></tr>
   </table>
@@ -1377,7 +1377,7 @@ false -&gt; if (N2kMsg.PGN!=126208L) </dd></dl>
 <p >This is a static function for PGN 126208 handling.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
     <tr><td class="paramname">PGNErrorCode</td><td>PGN error code, see <a class="el" href="_n2k_group_function_8h.html#a581366a28f5e6d0f779da0f33191629e">tN2kGroupFunctionPGNErrorCode</a> </td></tr>
     <tr><td class="paramname">TransmissionOrPriorityErrorCode</td><td>Transmission or Priority error code, see <a class="el" href="_n2k_group_function_8h.html#aba86dcb75a6f93dded55b6817627e94f">tN2kGroupFunctionTransmissionOrPriorityErrorCode</a> </td></tr>
     <tr><td class="paramname">NumberOfParameterPairs</td><td>Number of parameter pairs contained inside the group function message</td></tr>
@@ -1436,7 +1436,7 @@ false -&gt; if (N2kMsg.PGN!=126208L) </dd></dl>
 <p >This is a static function for PGN 126208 handling.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
     <tr><td class="paramname">PrioritySetting</td><td>Priority setting </td></tr>
     <tr><td class="paramname">NumberOfParameterPairs</td><td>Number of parameter pairs contained inside the group function message</td></tr>
   </table>
@@ -1517,7 +1517,7 @@ false -&gt; if (N2kMsg.PGN!=126208L) </dd></dl>
 <p>Parse parameters from group function ReadOrWrite message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
     <tr><td class="paramname">ManufacturerCode</td><td>Manufacturer Code, This will be set to 0xffff for non-propprietary PNGs </td></tr>
     <tr><td class="paramname">IndustryGroup</td><td>Industry Group Code, This will be set to 0xff for non-propprietary PNGs </td></tr>
     <tr><td class="paramname">UniqueID</td><td>Unique ID for the device </td></tr>
@@ -1585,7 +1585,7 @@ false -&gt; if (N2kMsg.PGN!=126208L) </dd></dl>
 <p >This is a static function for PGN 126208 handling.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
     <tr><td class="paramname">TransmissionInterval</td><td>Transmission interval </td></tr>
     <tr><td class="paramname">TransmissionIntervalOffset</td><td>Offset to the transmission interval </td></tr>
     <tr><td class="paramname">NumberOfParameterPairs</td><td>Number of parameter pairs contained inside the group function message</td></tr>
@@ -1750,7 +1750,7 @@ false -&gt; if (N2kMsg.PGN!=126208L) </dd></dl>
 <p>Setting up the group function message for Acknowledge. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
     <tr><td class="paramname">Destination</td><td>address of Destination </td></tr>
     <tr><td class="paramname">PGN</td><td>Parameter group Number </td></tr>
     <tr><td class="paramname">PGNErrorCode</td><td>PGN error code, see <a class="el" href="_n2k_group_function_8h.html#a581366a28f5e6d0f779da0f33191629e">tN2kGroupFunctionPGNErrorCode</a> </td></tr>
@@ -1843,7 +1843,7 @@ false -&gt; if (N2kMsg.PGN!=126208L) </dd></dl>
 <p>Setting up the group function message for Read Reply. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
     <tr><td class="paramname">Destination</td><td>address of Destination </td></tr>
     <tr><td class="paramname">PGN</td><td>Parameter group Number </td></tr>
     <tr><td class="paramname">ManufacturerCode</td><td>Manufacturer Code, This will be set to 0xffff for non-propprietary PNGs </td></tr>
@@ -1939,7 +1939,7 @@ false -&gt; if (N2kMsg.PGN!=126208L) </dd></dl>
 <p>Setting up the group function message for Write Reply. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, Output: NMEA2000 message ready to be send. </td></tr>
     <tr><td class="paramname">Destination</td><td>address of Destination </td></tr>
     <tr><td class="paramname">PGN</td><td>Parameter group Number </td></tr>
     <tr><td class="paramname">ManufacturerCode</td><td>Manufacturer Code, This will be set to 0xffff for non-propprietary PNGs </td></tr>
@@ -1994,7 +1994,7 @@ false -&gt; if (N2kMsg.PGN!=126208L) </dd></dl>
 <p >This is a static function for PGN 126208 handling.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
     <tr><td class="paramname">Index</td><td>Index where the Command Pair Parameters start</td></tr>
   </table>
   </dd>
@@ -2051,7 +2051,7 @@ false -&gt; if (N2kMsg.PGN!=126208L) </dd></dl>
 <p >This is a static function for PGN 126208 handling.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
     <tr><td class="paramname">Proprietary</td><td>Group function is proprietary </td></tr>
     <tr><td class="paramname">Index</td><td>Index where the Command Pair Parameters start</td></tr>
   </table>
@@ -2101,7 +2101,7 @@ false -&gt; if (N2kMsg.PGN!=126208L) </dd></dl>
 <p >This is a static function for PGN 126208 handling.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, This message is an Group function message </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, This message is an Group function message </td></tr>
     <tr><td class="paramname">Index</td><td>Index where the Request Pair Parameters start</td></tr>
   </table>
   </dd>

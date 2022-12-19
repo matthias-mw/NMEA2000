@@ -697,7 +697,7 @@ Functions</h2></td></tr>
 <p >Provides product information onto the network that could be important for determining quality of data coming from this product.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, ready to be send </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, ready to be send </td></tr>
     <tr><td class="paramname">N2kVersion</td><td>NMEA Network Message Database Version </td></tr>
     <tr><td class="paramname">ProductCode</td><td>NMEA Manufacturer's Product Code </td></tr>
     <tr><td class="paramname">ModelIDSize</td><td>Size of ModelID </td></tr>
@@ -781,7 +781,7 @@ false Parsing of PGN Message aborted </dd></dl>
 <p >Free-form alphanumeric fields describing the installation (e.g., starboard engine room location) of the device and installation notes (e.g., calibration data).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object </td></tr>
     <tr><td class="paramname">ManufacturerInformationSize</td><td>Size off Manufacturer Information </td></tr>
     <tr><td class="paramname">ManufacturerInformation</td><td>Manufacturer Information </td></tr>
     <tr><td class="paramname">InstallationDescription1Size</td><td>Size off Installation Description </td></tr>
@@ -829,7 +829,7 @@ false Parsing of PGN Message aborted </dd></dl>
 <p >As defined by ISO, this message has a data length of 3 bytes with no padding added to complete the single frame. The appropriate response to this message is based on the PGN being requested, and whether the receiver supports the requested PGN.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object </td></tr>
     <tr><td class="paramname">RequestedPGN</td><td>PGN being requested</td></tr>
   </table>
   </dd>
@@ -1151,7 +1151,7 @@ false Parsing of PGN Message aborted </dd></dl>
 <dl class="section note"><dt>Note</dt><dd>List of PGNs must be null terminated and defined as PROGMEM e.g. const unsigned long TransmitMessages[] PROGMEM={130310L,0};</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, ready to be send </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, ready to be send </td></tr>
     <tr><td class="paramname">Destination</td><td>Address of the destination </td></tr>
     <tr><td class="paramname">tr</td><td>Transmit or Receive, see <a class="el" href="_n_m_e_a2000_8h.html#afe3510c9b614e5cd7d30c8095882cde0">tN2kPGNList</a> </td></tr>
     <tr><td class="paramname">PGNs</td><td>List of PGNs </td></tr>
@@ -1199,7 +1199,7 @@ false Parsing of PGN Message aborted </dd></dl>
 <p >This PGN shall be transmitted by all NMEA devices. Reception of this PGN confirms that a device is still present on the network. Reception of this PGN may also be used to maintain an address to NAME association table within the receiving device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, ready to be send </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, ready to be send </td></tr>
     <tr><td class="paramname">timeInterval_ms</td><td>time interval in msec (0.01 - 655.32s ) </td></tr>
     <tr><td class="paramname">sequenceCounter</td><td>Sequence counter </td></tr>
   </table>
@@ -1282,7 +1282,7 @@ false Parsing of PGN Message aborted </dd></dl>
 <p >Provides product information onto the network that could be important for determining quality of data coming from this product.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, ready to be send </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, ready to be send </td></tr>
     <tr><td class="paramname">N2kVersion</td><td>NMEA Network Message Database Version </td></tr>
     <tr><td class="paramname">ProductCode</td><td>NMEA Manufacturer's Product Code </td></tr>
     <tr><td class="paramname">ModelID</td><td>Manufacturer's Model ID </td></tr>
@@ -1347,7 +1347,7 @@ false Parsing of PGN Message aborted </dd></dl>
 <p >Free-form alphanumeric fields describing the installation (e.g., starboard engine room location) of the device and installation notes (e.g., calibration data).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, ready to be send </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, ready to be send </td></tr>
     <tr><td class="paramname">ManufacturerInformation</td><td>Manufacturer Information </td></tr>
     <tr><td class="paramname">InstallationDescription1</td><td>Installation Description, Field 1 </td></tr>
     <tr><td class="paramname">InstallationDescription2</td><td>Installation Description, Field 2 </td></tr>
@@ -1402,7 +1402,7 @@ false Parsing of PGN Message aborted </dd></dl>
 <p >This message is provided by ISO 11783 for a handshake mechanism between transmitting and receiving devices. This message is the possible response to acknowledge the reception of a “normal broadcast” message or the response to a specific command to indicate compliance or failure.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, ready to be send </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, ready to be send </td></tr>
     <tr><td class="paramname">Control</td><td>Control Byte </td></tr>
     <tr><td class="paramname">GroupFunction</td><td>Group Function value </td></tr>
     <tr><td class="paramname">PGN</td><td>PGN of requested Information</td></tr>
@@ -1451,7 +1451,7 @@ false Parsing of PGN Message aborted </dd></dl>
 <p >As defined by ISO, this message has a data length of 3 bytes with no padding added to complete the single frame. The appropriate response to this message is based on the PGN being requested, and whether the receiver supports the requested PGN.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, ready to be send </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, ready to be send </td></tr>
     <tr><td class="paramname">Destination</td><td>Address of the destination </td></tr>
     <tr><td class="paramname">RequestedPGN</td><td>PGN being requested </td></tr>
   </table>
@@ -1492,7 +1492,7 @@ false Parsing of PGN Message aborted </dd></dl>
 <p >This network management message is used to claim a network address and to respond with device information (NAME) requested by the ISO Request or Complex Request Group Function. This PGN contains several fields that are Request Parameters that can be used to control the expected response to requests for this PGN.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, ready to be send </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, ready to be send </td></tr>
     <tr><td class="paramname">Name</td><td>Name of the device </td></tr>
   </table>
   </dd>
@@ -1568,7 +1568,7 @@ false Parsing of PGN Message aborted </dd></dl>
 <p >This network management message is used to claim a network address and to respond with device information (NAME) requested by the ISO Request or Complex Request Group Function. This PGN contains several fields that are Request Parameters that can be used to control the expected response to requests for this PGN.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, ready to be send </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, ready to be send </td></tr>
     <tr><td class="paramname">UniqueNumber</td><td>Unique Number (ISO Identity Number) </td></tr>
     <tr><td class="paramname">ManufacturerCode</td><td>Manufacturer Code </td></tr>
     <tr><td class="paramname">DeviceFunction</td><td>Device Function (ISO Function) </td></tr>

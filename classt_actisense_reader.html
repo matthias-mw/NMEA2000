@@ -166,7 +166,7 @@ Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ab85258a6c11ed3da4cececf66aebfab5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt_actisense_reader.html#ab85258a6c11ed3da4cececf66aebfab5">AddByteToBuffer</a> (char NewByte)</td></tr>
-<tr class="memdesc:ab85258a6c11ed3da4cececf66aebfab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a neu Byte to the buffer.  <a href="classt_actisense_reader.html#ab85258a6c11ed3da4cececf66aebfab5">More...</a><br /></td></tr>
+<tr class="memdesc:ab85258a6c11ed3da4cececf66aebfab5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new Byte to the buffer.  <a href="classt_actisense_reader.html#ab85258a6c11ed3da4cececf66aebfab5">More...</a><br /></td></tr>
 <tr class="separator:ab85258a6c11ed3da4cececf66aebfab5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4b67f887f3f5045220548107f6bb361"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classt_actisense_reader.html#ad4b67f887f3f5045220548107f6bb361">CheckMessage</a> (<a class="el" href="classt_n2k_msg.html">tN2kMsg</a> &amp;N2kMsg)</td></tr>
 <tr class="memdesc:ad4b67f887f3f5045220548107f6bb361"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if a message is valide.  <a href="classt_actisense_reader.html#ad4b67f887f3f5045220548107f6bb361">More...</a><br /></td></tr>
@@ -257,7 +257,7 @@ Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Adds a neu Byte to the buffer. </p>
+<p>Adds a new Byte to the buffer. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">NewByte</td><td>new Byte to be added </td></tr>
@@ -299,7 +299,7 @@ false -&gt; Buffer is full </dd></dl>
 <p>Checks if a message is valide. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object <br  />
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object <br  />
  </td></tr>
   </table>
   </dd>
@@ -376,7 +376,7 @@ false -&gt; data length greater then <a class="el" href="classt_n2k_msg.html#a6f
 <p >You can either call this or ParseMessages periodically.</p>
 <p >Read Actisense formatted NMEA2000 message from stream Actisense Format: &lt;10&gt;&lt;02&gt;&lt;93&gt;&lt;length (1)&gt;&lt;priority (1)&gt;&lt;PGN (3)&gt;&lt;destination (1)&gt;&lt;source (1)&gt;&lt;time (4)&gt;&lt;len (1)&gt;&lt;data (len)&gt;&lt;CRC (1)&gt;&lt;10&gt;&lt;03&gt; or &lt;10&gt;&lt;02&gt;&lt;94&gt;&lt;length (1)&gt;&lt;priority (1)&gt;&lt;PGN (3)&gt;&lt;destination (1)&gt;&lt;len (1)&gt;&lt;data (len)&gt;&lt;CRC (1)&gt;&lt;10&gt;&lt;03&gt; </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object <br  />
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object <br  />
  </td></tr>
     <tr><td class="paramname">ReadOut</td><td><br  />
 </td></tr>

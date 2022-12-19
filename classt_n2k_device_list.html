@@ -599,7 +599,7 @@ Protected Attributes</h2></td></tr>
 <p >The message contains free-form alphanumeric fields describing the installation (e.g., starboard engine room location) of the device and installation notes (e.g., calibration data). It is parsed and all data is stored in the internal device</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, </td></tr>
   </table>
   </dd>
 </dl>
@@ -637,7 +637,7 @@ Protected Attributes</h2></td></tr>
 <p >If the caller is completely unknown, a new device will be placed in <a class="el" href="classt_n2k_device_list.html#a4320b6c684c173e841f16f9312916f8e">Sources</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, </td></tr>
   </table>
   </dd>
 </dl>
@@ -674,7 +674,7 @@ Protected Attributes</h2></td></tr>
 <p >Depending on the message PGN the correct handler (see <a class="el" href="classt_n2k_device_list.html#a4c0ce3df62c18e5266540395ade82c3e">HandleIsoAddressClaim</a>, <a class="el" href="classt_n2k_device_list.html#a09aa2060b89a8357e4e91777c237961c">HandleProductInformation</a>, <a class="el" href="classt_n2k_device_list.html#a30c4976566653afa4bba9d2fe73e6ee9">HandleConfigurationInformation</a>, <a class="el" href="classt_n2k_device_list.html#a122561b21f3a1860e0d338f3a67667c3">HandleSupportedPGNList</a>, <a class="el" href="classt_n2k_device_list.html#a10dcd8efb822543434c1f76400858300">HandleOther</a>) is chosen. If ther e is now device with this source address is listed in <a class="el" href="classt_n2k_device_list.html#a4320b6c684c173e841f16f9312916f8e">Sources</a>, a new device is added ( <a class="el" href="classt_n2k_device_list.html#add544fd3c3ea24ff54f34e0b11dd559e">AddDevice</a>).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, </td></tr>
   </table>
   </dd>
 </dl>
@@ -713,7 +713,7 @@ Protected Attributes</h2></td></tr>
 <p >If request is pending ( <a class="el" href="classt_n2k_device_list.html#aeece33342b0015ae30051d7dd2d05663">HasPendingRequests</a> == true) it requires a name for every device, then loads product + config informations and supported PGN lists as needed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, </td></tr>
   </table>
   </dd>
 </dl>
@@ -750,7 +750,7 @@ Protected Attributes</h2></td></tr>
 <p >The message provides product information onto the network that could be important for determining quality of data coming from this product. The message is parsed and all data is stored in <a class="el" href="classt_n2k_device_list_1_1t_internal_device.html#acdeb4f0637df08624c13ef20fb1eac1c">tInternalDevice::ProdI</a></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, </td></tr>
   </table>
   </dd>
 </dl>
@@ -787,7 +787,7 @@ Protected Attributes</h2></td></tr>
 <p >The PGN 126464 message consists the group function type defined by the first field. The message will be either a Transmit PGNs or a Receive PGNs group function that identifies the PGNs transmitted from or received by a node. This function determines if the PGNs are receive or transmit PGN (see <a class="el" href="_n_m_e_a2000_8h.html#afe3510c9b614e5cd7d30c8095882cde0">tN2kPGNList</a>) an the stores the PGNs to the corresponding internal device in <a class="el" href="classt_n2k_device_list.html#a4320b6c684c173e841f16f9312916f8e">Sources</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object, </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object, </td></tr>
   </table>
   </dd>
 </dl>

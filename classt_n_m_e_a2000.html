@@ -2650,7 +2650,7 @@ false </dd></dl>
 <p>Handles if we get commanded to set a new address. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object </td></tr>
   </table>
   </dd>
 </dl>
@@ -2742,7 +2742,7 @@ false </dd></dl>
 <p >Document <a href="https://www.nmea.org/Assets/20140109%20nmea-2000-corrigendum-tc201401031%20pgn%20126208.pdf">https://www.nmea.org/Assets/20140109%20nmea-2000-corrigendum-tc201401031%20pgn%20126208.pdf</a> defines that systems should respond to NMEA Request/Command/Acknowledge group function PGN 126208. On the document it is not clear can request be send as broadcast, so we handle it, if we can.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object </td></tr>
   </table>
   </dd>
 </dl>
@@ -2778,7 +2778,7 @@ false </dd></dl>
 <p>Handles an IsoAddressClaim. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object </td></tr>
   </table>
   </dd>
 </dl>
@@ -2815,7 +2815,7 @@ false </dd></dl>
 <p >The function determines if the request is for us (Broadcast message or device in our list) and responds to the request.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object </td></tr>
   </table>
   </dd>
 </dl>
@@ -3186,7 +3186,7 @@ false </dd></dl>
 <p >Determines if this given PGN belongs to a fast packet message by checking if a corresponding message is listed on <a class="el" href="classt_n_m_e_a2000.html#abd82b4886d574e84f06a4cae614ed853">FastPacketMessages</a>[]</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object </td></tr>
   </table>
   </dd>
 </dl>
@@ -3793,7 +3793,7 @@ false </dd></dl>
 <p >Document <a href="https://www.nmea.org/Assets/20140109%20nmea-2000-corrigendum-tc201401031%20pgn%20126208.pdf">https://www.nmea.org/Assets/20140109%20nmea-2000-corrigendum-tc201401031%20pgn%20126208.pdf</a> defines that systems should respond to NMEA Request/Command/Acknowledge group function PGN 126208. Here we first call callback and if that will not handle function, we use default handler.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object </td></tr>
     <tr><td class="paramname">GroupFunctionCode</td><td></td></tr>
     <tr><td class="paramname">PGNForGroupFunction</td><td></td></tr>
     <tr><td class="paramname">iDev</td><td>index of the device on <a class="el" href="classt_n_m_e_a2000.html#af9b9fee600114b00f96e1f93cb337085">Devices</a> </td></tr>
@@ -3850,7 +3850,7 @@ false </dd></dl>
 <p >If non of this fits the RequestedPGN, we directly respond to the requester NAK. ( <a class="el" href="_n_m_e_a2000_8h.html#acf2f90d143281b3e2983d7b44bfe87c5">SetN2kPGNISOAcknowledgement</a>)</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object </td></tr>
     <tr><td class="paramname">RequestedPGN</td><td>Requested PGN </td></tr>
     <tr><td class="paramname">iDev</td><td>index of the device on <a class="el" href="classt_n_m_e_a2000.html#af9b9fee600114b00f96e1f93cb337085">Devices</a> </td></tr>
   </table>
@@ -3911,7 +3911,7 @@ false </dd></dl>
 <p>Run all message handlers. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object </td></tr>
   </table>
   </dd>
 </dl>
@@ -4240,7 +4240,7 @@ false -&gt; Message could not be send out </dd></dl>
 <p >See example TemperatureMonitor.ino.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">N2kMsg</td><td>Referenz to a N2kMsg Object </td></tr>
+    <tr><td class="paramname">N2kMsg</td><td>Reference to a N2kMsg Object </td></tr>
     <tr><td class="paramname">DeviceIndex</td><td>index of the device on <a class="el" href="classt_n_m_e_a2000.html#af9b9fee600114b00f96e1f93cb337085">Devices</a> </td></tr>
   </table>
   </dd>
@@ -6163,7 +6163,7 @@ false </dd></dl>
 <p>Start sending an ISO-TP message. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">msg</td><td>Referenz to a N2kMsg Object </td></tr>
+    <tr><td class="paramname">msg</td><td>Reference to a N2kMsg Object </td></tr>
     <tr><td class="paramname">iDev</td><td>index of the device on <a class="el" href="classt_n_m_e_a2000.html#af9b9fee600114b00f96e1f93cb337085">Devices</a></td></tr>
   </table>
   </dd>
